@@ -1,0 +1,53 @@
+
+1) Baixe o seguinte pacote de instalação para obter o mais recente versão estável do SDK do Flutter:
+
+	https://docs.flutter.dev/get-started/install/windows
+	flutter_windows)3.1.0.3-estável.zip
+
+3) Se você deseja executar comandos Flutter no console normal do Windows, execute estas etapas para adicionar Flutter à variável de ambiente:PATH
+
+	Na barra de pesquisa Iniciar, digite 'env' e selecione Editar variáveis de ambiente para sua conta.
+	Em Variáveis de usuário, verifique se há uma entrada chamada Caminho:
+	Se a entrada existir, acrescente o caminho completo para usar como separador de valores existentes.flutter\bin;
+	Se a entrada não existir, criar uma nova variável de usuário chamada com o caminho completo para como seu valor.Pathflutter\bin
+
+4) Em uma janela de console que tenha o diretório Flutter no (veja acima), execute o seguinte comando para ver se há são quaisquer dependências de plataforma que você precisa para concluir a configuração:
+	
+	C:\src\flutter>flutter doctor
+
+5) Baixe e instale o Android Studio.
+
+	https://developer.android.com/studio	
+
+6) Inicie o Android Studio e passe pelo 'Assistente de configuração do Android Studio'. Isso instala o SDK do Android mais recente, Ferramentas de linha de comando do SDK do Android, e 
+   Android SDK Build-Tools, que são exigidos pelo Flutter ao desenvolver para Android.
+
+7) Executar para confirmar que o Flutter localizou sua instalação do Android Studio. Se o Flutter não conseguir localizá-lo, executar para definir o diretório no qual o 
+   Android Studio está instalado.flutter doctorflutter config --android-studio-dir=<directory>
+
+	Se encontrando a mensagem de erro "Android sdkmanager not found" e preciso atualizar o SDK do Android
+
+	Se encontrando a mensagem de erro "Visual Studio está faltando componentes necessários" precisa instalar os componentes para a carga de trabalho "Desktop development with C++"
+	
+	Se estiver problema com emulador e preciso usar o celular no modo desenvolvedor e habilitar a depuração USB;
+
+8) Quando terminar de concordar com as licenças, execute novamente para confirmar que você está pronto para usar o Flutter.flutter doctor
+
+	flutter doctor -v
+
+9) Instalar o Visual Code e o suporte para o flutter
+
+	Extensão: Intall Flutter and Awesome Flutter Snipperts
+
+10) Acessando a pasta do projeto
+
+	C:\Users\7> cd .\AndroidStudioProjects\devel\
+
+11) Criar novo projeto via linha de comando
+
+	C:\Users\7\AndroidStudioProjects\devel> flutter create hello_word
+
+12) Conectar o device no visual studio ou android studio 
+
+	SM A705MN(mobile)
+	samsung SM-A705MN
